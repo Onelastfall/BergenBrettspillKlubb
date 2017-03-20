@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BoardgameComponent } from './boardgame.component';
+import { HomeModule } from "./Home/home.module"
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BoardgameComponent } from './boardgame.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
