@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {HomeComponent} from './home/home.component';
-import appRoutes from '../routes/app.routes';
+import {Routing} from '../routes/app.routes';
 import {GameComponent} from './games/game.component';
 
 
@@ -27,7 +27,7 @@ export const firebaseConfig = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    appRoutes
+    Routing
   ],
   providers: [],
   bootstrap: [AppComponent]

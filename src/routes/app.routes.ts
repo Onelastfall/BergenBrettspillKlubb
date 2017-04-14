@@ -8,4 +8,4 @@ const routes = [
   {path: 'spill', component: GameComponent}
 ];
 
-export default RouterModule.forRoot(routes);
+export const Routing = RouterModule.forRoot(routes);
