@@ -4,9 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import {HomeComponent} from './home/home.component';
-import {Routing} from '../routes/app.routes';
-import {GameComponent} from './games/game.component';
+import {rootRouting} from '../routes/app.routes';
 
 
 // Must export the config
@@ -20,14 +18,12 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    GameComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    Routing
+    rootRouting
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,9 @@
 
 
-import {HomeComponent} from '../app/home/home.component';
 import {RouterModule} from '@angular/router';
-import {GameComponent} from '../app/games/game.component';
 const routes = [
-  {path: '', component: HomeComponent},
-  {path: 'spill', component: GameComponent}
+  {path: '', loadChildren: 'app/home/home.module'},
+  {path: 'spill', loadChildren: 'app/games/game.module'}
 ];
 
-export const Routing = RouterModule.forRoot(routes);
+export const rootRouting = RouterModule.forRoot(routes);
