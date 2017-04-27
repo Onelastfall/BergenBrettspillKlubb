@@ -9,3 +9,4 @@ import {homeRoutes} from '../../routes/home.routes';
 })
 
 export default class HomeModule {}
+
